@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="bb"
-           fetch="ssh://git@bitbucket.org:patrikryd/" />
+           fetch="git@bitbucket.org:patrikryd/" />
   <remote  name="aosp"
            fetch="git://android.git.linaro.org/"
            review="review.android.git.linaro.org" />
