@@ -12,6 +12,8 @@
            fetch="git://github.com/rperier/" />
   <remote  name="zyga"
            fetch="git://github.com/zyga/" />
+  <remote  name="gh"
+           fetch="https://github.com/patrikryd/" />
   <default revision="refs/tags/android-4.1.2_r1"
            remote="aosp"
            sync-j="4" />
@@ -55,13 +57,7 @@
   <project path="external/stringbench" name="platform/external/stringbench" revision="master" />
   <!-- Make sure only one of the kernels is enabled! -->
   <!-- Linaro kernel -->
-  <project path="kernel" name="kernel/linux-linaro-tracking" revision="linux-linaro-snowball" />
-  <!-- AOSP kernel -->
-  <!-- project path="kernel" name="kernel/omap" revision="android-omap-panda-3.0" -->
-    <!-- We copy the defconfig over so we can use the same name as w/ the Linaro kernel -->
-    <!-- copyfile src="arch/arm/configs/panda_defconfig" dest="kernel/arch/arm/configs/android_omap4_defconfig" /-->
-  <!-- /project -->
-
+  <project path="kernel" name="kernel" revision="ushit" remote="gh" />
   <!-- AOSP with Linaro additions -->
   <!-- Linaro modifications: Made it build with OpenJDK, Compiler detection macros, optimization flags, uboot support -->
   <project path="build" name="platform/build" revision="linaro_android_4.1.2">
